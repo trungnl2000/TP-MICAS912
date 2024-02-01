@@ -107,7 +107,7 @@ class PolicyIterationAgent():
         # While not optimal policy
         while True:
             # Evaluate the current policy
-            V, _ = self.policy_evaluation(policy)
+            V, delta_array = self.policy_evaluation(policy)
             
             # Will be set to false if we make any changes to the policy
             policy_stable = True
