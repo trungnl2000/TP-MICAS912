@@ -71,7 +71,7 @@ class ValueIterationAgent():
                 # Compute the action values for action_index
                 for transition in transitions:
                     prob, next_state, reward = transition
-                    A[action_index] += prob * (reward + self.gamma * V[next_state])
+                    A[action_index] += prob * (reward + self.gamma * V[next_state]) # Formula in slide 38 Lec1
 
             return A
 
@@ -95,7 +95,10 @@ class ValueIterationAgent():
 
                 # Update the value function: Bellman optimality equation 
                 V[state_index] = best_action_value
-                
+
+            # Save the delta for this iteration
+            delta_array.append(delta)
+            
             # Check for convergence 
             if delta < self.convergence_threshold:
                 break
