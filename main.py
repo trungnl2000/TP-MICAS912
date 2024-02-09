@@ -2,7 +2,7 @@ import sys
 import numpy as np
 from learning.policy_iteration import PolicyIterationAgent
 from learning.value_iteration import ValueIterationAgent
-#from learning.qlearning import QLearningAgent
+from learning.qlearning import QLearningAgent
 from environment.states import State
 from environment.actions import Action
 from environment.transitions import Transition
