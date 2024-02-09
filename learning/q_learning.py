@@ -107,7 +107,7 @@ class QLearningAgent():
             
             epsilon = max(epsilon * epsilon_decay, epsilon_min)
             
-            print(f'Episode: {episode+1}/{n_episodes}, Average Reward: {avg_reward}, Epsilon: {epsilon:.2f}, Percentage of unvisited states: {percentage_unvisited_states:.2f}')
+            print(f'Episode: {episode+1}/{n_episodes}, Average Reward: {avg_reward}, Epsilon: {epsilon:.2f}, Percentage of unvisited states: {percentage_unvisited_states:.2f} ')
             print('---------------------------------------------------')
 
         print("[INFO] Q-Learning Training: Process Completed !")
