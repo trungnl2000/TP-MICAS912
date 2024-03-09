@@ -1,1 +1,1 @@
-# RL-NOMA-Resource-Scheduling
+The result figures are located in `./figures` folder

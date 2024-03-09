@@ -1,5 +1,5 @@
 # ./requirements.txt
 # *.png
-
-# */__pycache__/*
+.nfs*
+*/__pycache__/*
 # ./figures/*
